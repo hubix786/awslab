@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<link href="/assets/styles/bootstrap.min.css" rel="stylesheet">
+		<link href="/assets/styles/home.css" rel="stylesheet">
+        <script type="text/javascript" src="/assets/js/jquery-2.1.1.min.js"></script>       
+        <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>  
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <style>
+                    .domain-name{
+                        cursor:pointer;
+                    }
+                </style>
+                <title>SimpleDB</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="/" class="navbar-brand">PSOiR</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="/">Home</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+		
+		<section id="section1" class="panel panel-default">
+			<div class="panel-heading">
+			<div class="container">
+	    		<h3 class="panel-title">SimpleDB</h3>
+	    		</div>
+		  	</div>
+	  		<div class="panel-body">
+                           <!-- -->
+                           <dl class="dl-horizontal">
+                           <%for(var key in domains){%>
+                               <dt><%=key%></dt>
+                               <dd class="domain-name" data-domain="<%=domains[key]%>"><%=domains[key]%></dd> 
+                            <%}%>
+                           </dl>
+                           <!-- -->
+	  		</div>
+			<footer class="panel-footer">
+				
+			</footer>
+		</section>
+	</div>
+	</body>
+</html>

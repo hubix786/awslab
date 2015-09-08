@@ -1,0 +1,41 @@
+<div class="modal fade" id="uploadModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Upload a file</h4>
+      </div>
+      <div class="modal-body">
+      <!-- form body starts -->
+        <form action="https://<%=bucket%>.s3.amazonaws.com/" method="POST" id="sign-up-form" class="form-horizontal" enctype="multipart/form-data">
+			
+			<div class="container">
+				<% fields.forEach(function(elem){ %>
+				<input type="hidden" name="<%= elem.name  %>" value="<%=elem.value %>"/>
+				<%}); %>
+				
+				<div class="col-xs-5">
+					<div class="form-group">
+						<label for="exampleInputFile">File input</label>
+						<input type="file" name="file">
+						<p class="help-block">File will be send to the bucket <%=bucket%> </p>
+					</div>
+					
+					
+				</div>
+			</div>
+			
+			<div class="container">
+				<div class="col-xs-3">
+					<input type="submit" class="btn  btn-primary btn-block" value="Confirm"/>
+				</div>
+			</div>
+		</form>
+		<!-- form body ends -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

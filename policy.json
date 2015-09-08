@@ -1,0 +1,8 @@
+{	"expiration" : {"day":1},
+	"conditions": [ ["starts-with", "$key", "hubert.sochacki/"],
+    				 {"bucket": "lab4-weeia"}, 
+    				 {"acl": "private"},
+    				 {"success_action_redirect": "${hostname}"},   
+    				 ["content-length-range", 0, 3145728]
+    				]   
+}

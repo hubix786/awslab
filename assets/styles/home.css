@@ -1,0 +1,26 @@
+body {
+	overflow-y: scroll;
+        background-color: #262626;
+}
+
+#bucket-objects-wrapper {
+	width: 25%;
+}
+
+#object-preview-wrapper {
+	width: 73%;
+}
+
+.tab-pane:not(#operations) {
+	text-align: center;
+	padding-top: 2em;
+}
+#operations {
+	padding-top: 4em;
+}
+#preview img {
+	max-width: 80%;
+}
+#bucket-objects a {
+	overflow-x: hidden;
+}

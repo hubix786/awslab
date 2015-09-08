@@ -1,0 +1,27 @@
+{
+  "name": "awslab",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://172035%40edu.p.lodz.pl@github.com/hubix786/awslab.git"
+  },
+  "author": "Hubert Sochacki <172035@edu.p.lodz.pl>",
+  "dependencies": {
+    "async": "^0.2.10",
+    "async-waterfall": "^0.1.5",
+    "aws-sdk": "^2.1.20",
+    "ejs": "^1.0.0",
+    "mocha": "^2.2.5",
+    "moment": "^2.5.1",
+    "webs-weeia": "0.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/hubix786/awslab/issues"
+  },
+  "homepage": "https://github.com/hubix786/awslab"
+}
